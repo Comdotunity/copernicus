@@ -1,0 +1,33 @@
+{
+  "name": "com.unity",
+  "version": "1.0.0",
+  "description": "Com.unity Local Rewards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apps",
+    "local",
+    "android",
+    "iphone",
+    "coupons"
+  ],
+  "author": "iYoh",
+  "license": "SEE LICENSE IN lic.txt",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-plugin-html": "^2.0.0"
+  }
+, "scripts": { 
+    "dev": "nodemon server.js",
+    "lint": "npm run lint:javascript && polymer lint",
+    "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
+    "test": "polymer test",
+    "test:integration": "polymer build # test that psk builds without error with the CLI"
+}}
